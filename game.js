@@ -3,7 +3,7 @@
 function Computer() {
     const words = ['paper', 'scissor', 'rock']
     const arrayIndex = Math.floor(Math.random()*words.length)
-    console.log( words[arrayIndex])
+    return words[arrayIndex];
     };
 
 function playRound(playerChoice, getComputerChoice) {
@@ -35,6 +35,6 @@ function playRound(playerChoice, getComputerChoice) {
 
 
 }
-const playerChoice = "paper"
+const playerChoice = "rock"
 const getComputerChoice = Computer()
 console.log(playRound(playerChoice,getComputerChoice))
